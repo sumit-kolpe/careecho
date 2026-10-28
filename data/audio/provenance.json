@@ -1,0 +1,7 @@
+﻿{
+    "sample_rate":  16000,
+    "voice":  "Microsoft Zira Desktop",
+    "synthetic":  true,
+    "source":  "data/sample_transcript.txt",
+    "generator":  "Windows System.Speech"
+}

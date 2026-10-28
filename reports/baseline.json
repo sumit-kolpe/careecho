@@ -1,0 +1,83 @@
+{
+  "engine": "rules-v1",
+  "dataset_sha256": "424e589ababb027062c8e63afa330cd3a63b11da77446aa1f987753b8b8ae8e8",
+  "cases": 16,
+  "scope": "Hand-authored synthetic diagnostic cases; not held-out clinical data",
+  "classification": {
+    "n": 42,
+    "accuracy": 0.9523809523809523,
+    "macro_f1": 0.9481934731934731,
+    "unsafe_coverage_count": 0,
+    "per_class": {
+      "covered": {
+        "precision": 1.0,
+        "recall": 0.9411764705882353,
+        "f1": 0.9696969696969697,
+        "support": 17
+      },
+      "missing": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 9
+      },
+      "needs_review": {
+        "precision": 0.9,
+        "recall": 0.9,
+        "f1": 0.9,
+        "support": 10
+      },
+      "possible_conflict": {
+        "precision": 0.8571428571428571,
+        "recall": 1.0,
+        "f1": 0.923076923076923,
+        "support": 6
+      }
+    },
+    "confusion": {
+      "covered": {
+        "covered": 16,
+        "missing": 0,
+        "needs_review": 1,
+        "possible_conflict": 0
+      },
+      "missing": {
+        "covered": 0,
+        "missing": 9,
+        "needs_review": 0,
+        "possible_conflict": 0
+      },
+      "needs_review": {
+        "covered": 0,
+        "missing": 0,
+        "needs_review": 9,
+        "possible_conflict": 1
+      },
+      "possible_conflict": {
+        "covered": 0,
+        "missing": 0,
+        "needs_review": 0,
+        "possible_conflict": 6
+      }
+    }
+  },
+  "barriers": {
+    "true_positive": 6,
+    "false_positive": 1,
+    "false_negative": 0
+  },
+  "failures": [
+    {
+      "case": "wound-paraphrase-challenge",
+      "target": "medication",
+      "expected": "covered",
+      "predicted": "needs_review"
+    },
+    {
+      "case": "wound-correction-challenge",
+      "target": "medication",
+      "expected": "needs_review",
+      "predicted": "possible_conflict"
+    }
+  ]
+}

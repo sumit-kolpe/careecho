@@ -1,0 +1,7 @@
+{
+  "id": "therapy", "title": "Fictional home-exercise discharge exercise", "synthetic": true,
+  "targets": [
+    {"id":"exercise", "category":"self_care", "instruction":"In this fictional plan, do the assigned exercises twice daily.", "anchors":["exercise","exercises"], "concepts":[["exercise","exercises"],["twice daily","twice a day","two times a day"]], "conflicts":["once a week","once daily","once a day"], "question":"How often does your written plan say to do the assigned exercises?"},
+    {"id":"followup", "category":"follow_up", "instruction":"In this fictional plan, attend physical therapy in three days.", "anchors":["therapy","therapist"], "concepts":[["therapy","therapist"],["three days","3 days"]], "conflicts":["three weeks","3 weeks"], "question":"When is your physical therapy appointment, and how will you get there?"}
+  ]
+}

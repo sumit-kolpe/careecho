@@ -1,0 +1,167 @@
+{
+  "scope": "One synthetic TTS voice and one script, not a clinical ASR benchmark",
+  "python": "3.12.6",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "versions": {
+    "faster-whisper": "1.2.1",
+    "ctranslate2": "4.8.4",
+    "huggingface-hub": "2.3.0"
+  },
+  "audio_sha256": "fd6e805ec46fca9ffa1570d059e6d02dbc91f4b6097cd00d3d44204328d5939d",
+  "reference": "I will take cephalexin once a day for five days. I will change the dressing daily. I need to go to the clinic in seven days. I cannot afford the prescription and I have no ride.",
+  "terms": [
+    "cephalexin",
+    "dressing",
+    "clinic",
+    "prescription"
+  ],
+  "model": "tiny.en",
+  "rows": [
+    {
+      "condition": "clean",
+      "glossary": false,
+      "errors": 1,
+      "reference_words": 37,
+      "wer": 0.02702702702702703,
+      "term_recall": 0.75,
+      "downstream_status_agreement": 0.6666666666666666,
+      "transcription": {
+        "text": "I will take Cephaluxen once a day for five days. I will change the dressing daily. I need to go to the clinic in seven days. I cannot afford the prescription and I have no ride.",
+        "model": "tiny.en",
+        "language": "en",
+        "duration_seconds": 13.62,
+        "elapsed_seconds": 3.8,
+        "segments": [
+          {
+            "start": 0.0,
+            "end": 3.96,
+            "text": "I will take Cephaluxen once a day for five days.",
+            "avg_logprob": -0.2836940176082107,
+            "no_speech_prob": 0.03837524726986885
+          },
+          {
+            "start": 3.96,
+            "end": 6.64,
+            "text": "I will change the dressing daily.",
+            "avg_logprob": -0.2836940176082107,
+            "no_speech_prob": 0.03837524726986885
+          },
+          {
+            "start": 6.64,
+            "end": 9.88,
+            "text": "I need to go to the clinic in seven days.",
+            "avg_logprob": -0.2836940176082107,
+            "no_speech_prob": 0.03837524726986885
+          },
+          {
+            "start": 9.88,
+            "end": 13.72,
+            "text": "I cannot afford the prescription and I have no ride.",
+            "avg_logprob": -0.2836940176082107,
+            "no_speech_prob": 0.03837524726986885
+          }
+        ],
+        "warnings": []
+      }
+    },
+    {
+      "condition": "clean",
+      "glossary": true,
+      "errors": 0,
+      "reference_words": 37,
+      "wer": 0.0,
+      "term_recall": 1.0,
+      "downstream_status_agreement": 0.3333333333333333,
+      "transcription": {
+        "text": "I will take cephalexin once a day for five days I will change the dressing daily I need to go to the clinic in seven days I cannot afford the prescription and I have no ride",
+        "model": "tiny.en",
+        "language": "en",
+        "duration_seconds": 13.62,
+        "elapsed_seconds": 1.539,
+        "segments": [
+          {
+            "start": 0.0,
+            "end": 13.62,
+            "text": "I will take cephalexin once a day for five days I will change the dressing daily I need to go to the clinic in seven days I cannot afford the prescription and I have no ride",
+            "avg_logprob": -0.04096042604318687,
+            "no_speech_prob": 0.0001407192467013374
+          }
+        ],
+        "warnings": []
+      }
+    },
+    {
+      "condition": "noise_10db_seed42",
+      "glossary": false,
+      "errors": 2,
+      "reference_words": 37,
+      "wer": 0.05405405405405406,
+      "term_recall": 0.75,
+      "downstream_status_agreement": 0.6666666666666666,
+      "transcription": {
+        "text": "I will take Sepalex and once a day for five days. I will change the dressing daily. I need to go to the clinic in seven days. I cannot afford the prescription and I have no ride.",
+        "model": "tiny.en",
+        "language": "en",
+        "duration_seconds": 13.62,
+        "elapsed_seconds": 1.709,
+        "segments": [
+          {
+            "start": 0.0,
+            "end": 3.92,
+            "text": "I will take Sepalex and once a day for five days.",
+            "avg_logprob": -0.2933977779287558,
+            "no_speech_prob": 0.03974227234721184
+          },
+          {
+            "start": 3.92,
+            "end": 6.64,
+            "text": "I will change the dressing daily.",
+            "avg_logprob": -0.2933977779287558,
+            "no_speech_prob": 0.03974227234721184
+          },
+          {
+            "start": 6.64,
+            "end": 9.84,
+            "text": "I need to go to the clinic in seven days.",
+            "avg_logprob": -0.2933977779287558,
+            "no_speech_prob": 0.03974227234721184
+          },
+          {
+            "start": 9.84,
+            "end": 13.68,
+            "text": "I cannot afford the prescription and I have no ride.",
+            "avg_logprob": -0.2933977779287558,
+            "no_speech_prob": 0.03974227234721184
+          }
+        ],
+        "warnings": []
+      }
+    },
+    {
+      "condition": "noise_10db_seed42",
+      "glossary": true,
+      "errors": 0,
+      "reference_words": 37,
+      "wer": 0.0,
+      "term_recall": 1.0,
+      "downstream_status_agreement": 0.3333333333333333,
+      "transcription": {
+        "text": "I will take cephalexin once a day for five days I will change the dressing daily I need to go to the clinic in seven days I cannot afford the prescription and I have no ride",
+        "model": "tiny.en",
+        "language": "en",
+        "duration_seconds": 13.62,
+        "elapsed_seconds": 1.537,
+        "segments": [
+          {
+            "start": 0.0,
+            "end": 13.62,
+            "text": "I will take cephalexin once a day for five days I will change the dressing daily I need to go to the clinic in seven days I cannot afford the prescription and I have no ride",
+            "avg_logprob": -0.05192942668994268,
+            "no_speech_prob": 7.930034917080775e-05
+          }
+        ],
+        "warnings": []
+      }
+    }
+  ]
+}

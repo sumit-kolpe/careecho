@@ -1,0 +1,8 @@
+{
+  "id": "wound", "title": "Fictional wound-care discharge exercise", "synthetic": true,
+  "targets": [
+    {"id":"medication", "category":"medication", "instruction":"In this fictional plan, take cephalexin twice daily for five days.", "anchors":["cephalexin","antibiotic"], "concepts":[["cephalexin","antibiotic"],["twice daily","twice a day","two times a day"],["five days","5 days"]], "conflicts":["once daily","once a day","three times a day","stop when i feel better"], "question":"How often and for how many days does your written medication plan say to take it?"},
+    {"id":"dressing", "category":"self_care", "instruction":"In this fictional plan, change the dressing daily.", "anchors":["dressing","bandage"], "concepts":[["dressing","bandage"],["change","replace"],["daily","every day","each day"]], "conflicts":["once a week","every week"], "question":"How will you care for the dressing each day?"},
+    {"id":"followup", "category":"follow_up", "instruction":"In this fictional plan, return to the clinic in seven days.", "anchors":["clinic","follow up","followup"], "concepts":[["clinic","follow up","followup"],["seven days","7 days","one week","a week"]], "conflicts":["one month","a month"], "question":"When and where is your follow-up visit?"}
+  ]
+}
