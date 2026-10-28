@@ -1,8 +1,14 @@
-# Publish on GitHub
+# GitHub repository
 
-The repository is prepared locally. Creating a public remote is a separate step
-requiring your GitHub account. Use GitHub's **New repository** page and create an
-empty repository named `careecho` without initializing a README or license.
+The public repository is [sumit-kolpe/careecho](https://github.com/sumit-kolpe/careecho).
+It was published on October 28, 2026. Review automated checks on the
+[Actions page](https://github.com/sumit-kolpe/careecho/actions).
+
+## Publish a separate copy
+
+To publish your own copy, use GitHub's **New repository** page and create an
+empty repository without initializing a README or license. The commands below
+are for a new local checkout with no existing remote.
 
 From this project directory:
 

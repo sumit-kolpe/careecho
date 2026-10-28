@@ -178,6 +178,6 @@ paired rule/LLM evaluation. Real clinical research would require an approved sec
 environment and appropriate institutional processes before collecting any patient data.
 
 See [the demo and study guide](docs/DEMO.md) before presenting the project and
-[the GitHub guide](docs/PUBLISHING.md) to publish it. This scaffold was developed
+[the GitHub guide](docs/PUBLISHING.md) for repository details. This scaffold was developed
 with AI assistance; portfolio claims should reflect what you personally understand,
 verify, and extend. License: MIT (third-party models retain their own licenses).

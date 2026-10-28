@@ -1,8 +1,9 @@
 # Measured results
 
 Run on 2026-10-27 using Python 3.12.6 on Windows. See `requirements-tested.txt`
-for the tested dependency snapshot. GitHub Actions is configured but has not been
-run on GitHub because the project has not yet been pushed.
+for the tested dependency snapshot. The repository was published on October 28, 2026;
+current GitHub Actions results are available on the
+[Actions page](https://github.com/sumit-kolpe/careecho/actions).
 
 ## Text diagnostic set
 
